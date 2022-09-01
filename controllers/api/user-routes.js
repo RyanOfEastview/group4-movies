@@ -5,7 +5,7 @@ const { User } = require("../../models");
 router.get("/", (req, res) => {
   // Access our User model and run .findAll() method
   User.findAll({
-    attributes: { exclude: ["password"] },
+    attributes: { exclude: ["pw"] },
   })
     .then((dbUserData) => res.json(dbUserData))
     .catch((err) => {
@@ -17,7 +17,7 @@ router.get("/", (req, res) => {
 // GET /api/users/1
 router.get("/:id", (req, res) => {
   User.findOne({
-    attributes: { exclude: ["password"] },
+    attributes: { exclude: ["pw"] },
     where: {
       id: req.params.id,
     },
@@ -37,11 +37,11 @@ router.get("/:id", (req, res) => {
 
 // POST /api/users
 router.post("/", (req, res) => {
-  // expects {username: '', email: '@.com', password: ''}
+  // expects {username: '', email: '@.com', pw: ''}
   User.create({
     username: req.body.username,
     email: req.body.email,
-    password: req.body.password,
+    pw: req.body.pw,
   })
     .then((dbUserData) => res.json(dbUserData))
     .catch((err) => {
@@ -51,12 +51,12 @@ router.post("/", (req, res) => {
 });
 
 router.post("/login", (req, res) => {
-  //expects { email } and { password }
+  //expects { email } and { pw }
 });
 
 // PUT /api/users/1
 router.put("/:id", (req, res) => {
-  // expects {username: '', email: '', password: ''}
+  // expects {username: '', email: '', pw: ''}
 
   // if req.body has exact key/value pairs to match the model, you can just use `req.body` instead
   User.update(req.body, {
