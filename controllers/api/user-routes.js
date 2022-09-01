@@ -50,6 +50,10 @@ router.post("/", (req, res) => {
     });
 });
 
+router.post("/login", (req, res) => {
+  //expects { email } and { password }
+});
+
 // PUT /api/users/1
 router.put("/:id", (req, res) => {
   // expects {username: '', email: '', password: ''}
