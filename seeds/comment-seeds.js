@@ -2,7 +2,7 @@ const { Comment } = require("../models");
 
 const commentdata = [
   {
-    comment_text: "Wonderful movie with Oscar winning performances.",
+    comment_text: "In hac habitasse platea dictumst.",
     user_id: 6,
     post_id: 1,
   },

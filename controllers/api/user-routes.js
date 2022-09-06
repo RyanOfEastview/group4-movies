@@ -41,7 +41,7 @@ router.post("/", (req, res) => {
   User.create({
     username: req.body.username,
     email: req.body.email,
-    pw: req.body.pw,
+    password: req.body.password,
   })
     .then((dbUserData) => res.json(dbUserData))
     .catch((err) => {
