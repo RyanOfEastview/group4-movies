@@ -1,3 +1,9 @@
+//functions loginFormHandler(event) and signupFormHandler(event)
+
+
+
+// document.querySelector('.login-form').addEventListener('submit', loginFormHandler);
+
 function signupFormHandler(event) {
     event.preventDefault();
   
@@ -18,3 +24,4 @@ function signupFormHandler(event) {
     }
   }
   document.querySelector('.signup-form').addEventListener('submit', signupFormHandler);
+
