@@ -35,12 +35,12 @@ User.init(
         isEmail: true,
       },
     },
-    // define a pw column
-    pw: {
+    // define a password column
+    password: {
       type: DataTypes.STRING,
       allowNull: false,
       validate: {
-        // this means the pw must be at least four characters long
+        // this means the password must be at least four characters long
         len: [4],
       },
     },
@@ -49,12 +49,15 @@ User.init(
     hooks: {
       // set up beforeCreate lifecycle "hook" functionality
       async beforeCreate(newUserData) {
-        newUserData.pw = await bcrypt.hash(newUserData.pw, 10);
+        newUserData.password = await bcrypt.hash(newUserData.password, 10);
         return newUserData;
       },
       // set up beforeUpdate lifecycle "hook" functionality
       async beforeUpdate(updatedUserData) {
-        updatedUserData.pw = await bcrypt.hash(updatedUserData.pw, 10);
+        updatedUserData.password = await bcrypt.hash(
+          updatedUserData.password,
+          10
+        );
         return updatedUserData;
       },
     },
