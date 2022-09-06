@@ -1,7 +1,6 @@
 {
   "name": "group4-movies",
   "version": "1.0.0",
-  "description": "",
   "main": "server.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
@@ -25,5 +24,6 @@
     "express-handlebars": "^6.0.6",
     "mysql2": "^2.3.3",
     "sequelize": "^6.21.4"
-  }
+  },
+  "description": ""
 }
