@@ -39,7 +39,7 @@ User.init(
       },
     },
     // define a password column
-    password: {
+    pw: {
       type: DataTypes.STRING,
       allowNull: false,
       validate: {
@@ -52,13 +52,13 @@ User.init(
     hooks: {
       // set up beforeCreate lifecycle "hook" functionality
       async beforeCreate(newUserData) {
-        newUserData.password = await bcrypt.hash(newUserData.password, 10);
+        newUserData.pw = await bcrypt.hash(newUserData.pw, 10);
         return newUserData;
       },
       // set up beforeUpdate lifecycle "hook" functionality
       async beforeUpdate(updatedUserData) {
-        updatedUserData.password = await bcrypt.hash(
-          updatedUserData.password,
+        updatedUserData.pw = await bcrypt.hash(
+          updatedUserData.pw,
           10
         );
         return updatedUserData;
