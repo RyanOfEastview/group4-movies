@@ -1,9 +1,3 @@
-//functions loginFormHandler(event) and signupFormHandler(event)
-
-
-
-// document.querySelector('.login-form').addEventListener('submit', loginFormHandler);
-
 async function signupFormHandler(event) {
   event.preventDefault();
 
