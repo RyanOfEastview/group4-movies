@@ -1,40 +1,42 @@
-
 <!DOCTYPE html>
 
 <html lang="en">
 
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>GROUP 4 - MOVIES</title>
-    <link rel="stylesheet" href="/stylesheets/style.css" />
-  </head>
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link href="https://fonts.googleapis.com/css2?family=Bangers&family=Indie+Flower&family=Permanent+Marker&display=swap"
+    rel="stylesheet">
+  <title>GROUP 4 - MOVIES Reviewer</title>
+  <link rel="stylesheet" href="/stylesheets/style.css" />
+  <link rel="icon" type="image/x-icon" href="./assets/icon/gp4Icon.ico">
+</head>
 
-  <body>
-    <div class="wrapper">
-      <header>
-        <h1>
-          <a href="/">GROUP 4 - MOVIES</a>
-        </h1>
-        <nav>
-         {{!-- {{#if loggedIn}} --}}
-            <button id="logout" class="btn-no-style">logout</button>
-          {{!-- {{else}} --}}
-            <a href="/login">login</a>
-          {{!-- {{/if}} --}}
-        </nav>
-      </header>
-      <main>
-        {{{body}}}
-      </main>
-      <footer>
-        Thanks for visiting!
-      </footer>
-    </div>
-    {{!-- {{#if loggedIn}} --}}
-    
-    {{!-- {{/if}} --}}
-   <script src="/javascript/logout.js"></script>
+<body>
+  <div class="wrapper">
+    <header>
+      <h1>
+        <a href="/">GROUP 4 - MOVIES Reviewer</a>
+      </h1>
+      <nav>
+        {{#if loggedIn}}
+        <button id="logout" class="btn-no-style">logout</button>
+        {{else}}
+        <a href="/login">login</a>
+        {{/if}}
+      </nav>
+    </header>
+    <main>
+      {{{body}}}
+    </main>
+    <footer>
+      <h4>This page is brought to you by Hiu Sum Jaime Yue, Spencer Cole & Ryan McCarthy</h4>
+    </footer>
+  </div>
+  {{#if loggedIn}}
+  <script src="/javascript/logout.js"></script>
+  {{/if}}
+
 </body>
 
 

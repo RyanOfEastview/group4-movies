@@ -2,14 +2,15 @@
 {{!-- Comments form ready, but check attributes before running --}}
 <article class="user">
     <div class="title">
-        <a href="{{user.user_url}}" target="_blank">{{user.title}}</a>
-        <span>({{user.user_url}})</span>
+        {{!-- <a href="{{post.post_url}}" target="_blank">{{post.title}}</a> --}}
+        <span>({{post.user_id}}), from id: {{post.id}}</span>
     </div>
     <div class="meta">
-        {{user.user.username}} on
-        {{user.created_at}}
-        |
-        <a href="/user/{{user.id}}">{{user.comments.length}} comment(s)</a>
+        {{post.movieDescription}}
+        :Year of
+        {{post.movie_title}}
+        {{!-- {{post.created_at}} --}}
+        {{!-- <a href="/post/{{post.id}}">{{post.comments.length}} comment(s)</a> --}}
     </div>
 </article>
 
@@ -26,10 +27,10 @@
 {{/if}}
 
 <div class="comments">
-    {{#each xxx.comments}}
+    {{#each post.comments}}
     <section class="comment">
         <div class="meta">
-            {{user.username}} on {{created_at}}
+            {{user.username}} commented
         </div>
         <div class="text">
             {{comment_text}}
@@ -39,5 +40,5 @@
 </div>
 
 {{#if loggedIn}}
-<script src="/javascript/comment.js"></script>
+<script src="/javascript/comments.js"></script>
 {{/if}}
