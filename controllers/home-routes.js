@@ -6,6 +6,7 @@ const { User } = require("../models");
 
 // get all users for homepage
 router.get("/", (req, res) => {
+  console.log(req.session);
   console.log("======================");
   User.findAll({
     attributes: [
@@ -42,8 +43,13 @@ router.get("/", (req, res) => {
     });
 });
 
-router.get("/login", (req, res) => {
-  res.render("login");
+router.get('/login', (req, res) => {
+  if (req.session.loggedIn) {
+    res.redirect('/');
+    return;
+  }
+
+  res.render('login');
 });
 
 module.exports = router;
