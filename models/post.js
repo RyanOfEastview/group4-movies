@@ -17,8 +17,8 @@ Post.init(
       type: DataTypes.STRING,
       allowNull: false,
     },
-    year: {
-      type: DataTypes.INTEGER,
+    movieDescription: {
+      type: DataTypes.STRING,
     },
     post_url: {
       type: DataTypes.STRING,

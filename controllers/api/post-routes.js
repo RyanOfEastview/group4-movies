@@ -35,10 +35,10 @@ router.get("/:id", (req, res) => {
 // POST /api/posts
 // I think this is where the API will be connected.  I THINK.
 router.post("/", (req, res) => {
-  // expects {username: '', email: '@.com', pw: ''}
+  console.log("route triggered");
   Post.create({
     movie_title: req.body.movie_title,
-    year: req.body.year,
+    movieDescription: req.body.movieDescription,
     post_url: req.body.post_url,
   })
     .then((dbUserData) => res.json(dbUserData))
