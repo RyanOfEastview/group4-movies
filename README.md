@@ -2,7 +2,14 @@
                 
 ## Description       
 We are Group4, consists of Hiu Sum Jaime Yue, Spencer Cole, Ryan McCarthy.          
-This is GROUP4 - Movies Reviewer, a movies web application that allows user to comment on movies.         
+This is GROUP4 - Movies Reviewer, a movies web application that allows user to comment on movies.     
+
+Below are the links to the deployed application and this repository. Screenshots are shown after the links.
+
+Deployed application:         
+Github repository: https://github.com/RyanOfEastview/group4-movies
+
+Screenshots:
 
 ## Table of Contents               
 -[Installation](#installation)          
