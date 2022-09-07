@@ -1,0 +1,209 @@
+:root {
+  --primary: #ffa630;
+  --secondary: #ffffff;
+  --tertiary: #4da1a9;
+  --light-dark: #2e5077;
+  --dark: #611c35;
+  --antiquewhite: #faebd7;
+  --border-radius: .3rem;
+}
+
+* {
+  color: var(--dark);
+  box-sizing: border-box;
+}
+
+body,
+html {
+  height: 100%;
+  padding: 0;
+  margin: 0;
+  font-family: sans-serif;
+  background-color: var(--primary);
+}
+
+a {
+  text-decoration: none;
+  color: var(--secondary);
+  font-weight: bold;
+  transition: color .1s;
+}
+
+article a:hover {
+  color: var(--dark);
+}
+
+.post-list {
+  margin: 0;
+  padding: 0;
+}
+
+textarea,
+input {
+  padding: .5%;
+  border-radius: var(--border-radius);
+  border: 1px solid var(--secondary);
+}
+
+textarea:focus,
+input:focus {
+  outline: none;
+  border: 1px solid var(--tertiary);
+}
+
+textarea {
+  min-width: 40%;
+  min-height: 100px;
+}
+
+form>div {
+  margin-bottom: 2%;
+}
+
+form label {
+  display: block;
+}
+
+.wrapper {
+  width: 100%;
+  min-height: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+}
+
+header {
+  color: var(--primary);
+  background-color: var(--dark);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 3% 4%;
+  border-radius: var(--border-radius);
+}
+
+header h1 {
+  font-size: 30px;
+  font-family: "Bangers";
+}
+
+header h1 a {
+  -webkit-text-stroke: 0.1px white;
+  color: var(--dark);
+}
+
+main {
+  flex: 1;
+  padding: 2% 4%;
+}
+
+header nav a,
+button,
+.btn-no-style {
+  background: none;
+  border: none;
+  cursor: pointer;
+  text-decoration: none;
+  color: var(--secondary);
+  font-size: 100%;
+  font-weight: bold;
+  transition: color .1s;
+  margin-left: 16px;
+  border-radius: var(--border-radius);
+}
+
+header nav a,
+.btn-no-style {
+  font-family: "Indie Flower";
+}
+
+header a:hover,
+button:hover,
+.btn-no-style:hover,
+footer a:hover {
+  background: none;
+  color: var(--primary);
+  background-color: var(--dark);
+}
+
+.post {
+  margin-bottom: 2%;
+  line-height: 150%;
+}
+
+.post .title span {
+  font-style: italic;
+  font-size: 90%;
+  color: #7d7d7d;
+}
+
+.comment-form {
+  margin-top: 2%;
+  margin-bottom: 2%;
+}
+
+.comment {
+  padding: 1%;
+  margin-bottom: 1%;
+  border-radius: var(--border-radius);
+  border-style: dashed;
+}
+
+.comment:nth-child(odd) {
+  background-color: var(--antiquewhite);
+}
+
+.comment .meta {
+  font-size: 90%;
+  margin-bottom: .5%;
+}
+
+.new-post-form input {
+  width: 300px;
+}
+
+.edit-post-form {
+  margin-bottom: 5%;
+}
+
+footer {
+  position: relative;
+  bottom: 10px;
+  background-color: var(--dark);
+  padding: 35px 22px;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  width: 100%;
+  height: 2.5rem;
+  border-radius: var(--border-radius);
+  font-family: "Indie Flower";
+}
+
+footer a {
+  color: white;
+  text-decoration: underline;
+}
+
+footer h4 {
+  color: var(--secondary);
+}
+
+/*MEDIA QUERY for Tablet*/
+@media screen and (max-width: 742px) {
+  header h1 {
+    font-size: 22px;
+  }
+}
+
+/*MEDIA QUERY for Mobile*/
+@media screen and (max-width: 490px) {
+  header h1 {
+    font-size: 18px;
+  }
+
+  footer h4 {
+    font-size: 10px;
+  }
+}

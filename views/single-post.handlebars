@@ -1,0 +1,45 @@
+{{!-- Need to reformat after replacing user with movies --}}
+{{!-- Comments form ready, but check attributes before running --}}
+<article class="user">
+    <div class="title">
+        {{!-- <a href="{{post.post_url}}" target="_blank">{{post.title}}</a> --}}
+        {{!-- <span>({{post.user_id}}), from id: {{post.id}}</span> --}}
+        <span>{{post.movie_title}}</span>{{!-- Can add link here--}}
+        {{!-- <div>
+            <img src="./Images/forestGumpPic.jpg" alt="Picture" style="width:128px;height:170px;" />
+        </div> --}}
+        {{!-- Can add img link here, instead of Images inside of our folders--}}
+    </div>
+    <div class="meta">
+        Year: {{post.movieDescription}}
+    </div>
+</article>
+
+{{#if loggedIn}}
+<form class="comment-form">
+    <div>
+        <textarea name="comment-body"></textarea>
+    </div>
+
+    <div>
+        <button type="submit">Add comment</button>
+    </div>
+</form>
+{{/if}}
+
+<div class="comments">
+    {{#each post.comments}}
+    <section class="comment">
+        <div class="meta">
+            {{user.username}} commented
+        </div>
+        <div class="text">
+            {{comment_text}}
+        </div>
+    </section>
+    {{/each}}
+</div>
+
+{{#if loggedIn}}
+<script src="/javascript/comments.js"></script>
+{{/if}}
