@@ -5,12 +5,12 @@
       <article class="user">
         <div class="title">
           {{!-- <a href="{{post.post_url}}" target="_blank">{{post.title}}</a> --}}
-          <span>({{post.user_id}}), from id: {{post.id}}</span>
+          {{!-- <span>({{post.user_id}}), from id: {{post.id}}</span> --}}
+          <span>{{post.movie_title}}</span> 
         </div>
         <div class="meta">
-          {{post.movieDescription}}
-          :Year of
-          {{post.movie_title}}
+          Year: {{post.movieDescription}}
+
           {{!-- {{post.created_at}} --}}
           |
           <a href="/post/{{post.id}}">Comment here</a>
