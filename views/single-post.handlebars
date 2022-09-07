@@ -1,0 +1,43 @@
+{{!-- Need to reformat after replacing user with movies --}}
+{{!-- Comments form ready, but check attributes before running --}}
+<article class="user">
+    <div class="title">
+        <a href="{{user.user_url}}" target="_blank">{{user.title}}</a>
+        <span>({{user.user_url}})</span>
+    </div>
+    <div class="meta">
+        {{user.user.username}} on
+        {{user.created_at}}
+        |
+        <a href="/user/{{user.id}}">{{user.comments.length}} comment(s)</a>
+    </div>
+</article>
+
+{{#if loggedIn}}
+<form class="comment-form">
+    <div>
+        <textarea name="comment-body"></textarea>
+    </div>
+
+    <div>
+        <button type="submit">add comment</button>
+    </div>
+</form>
+{{/if}}
+
+<div class="comments">
+    {{#each xxx.comments}}
+    <section class="comment">
+        <div class="meta">
+            {{user.username}} on {{created_at}}
+        </div>
+        <div class="text">
+            {{comment_text}}
+        </div>
+    </section>
+    {{/each}}
+</div>
+
+{{#if loggedIn}}
+<script src="/javascript/comment.js"></script>
+{{/if}}
