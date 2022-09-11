@@ -1,6 +1,7 @@
 //User-Routes
 const router = require("express").Router();
 const { User } = require("../../models");
+const { emailUser } = require("../../config/connection");
 
 // GET /api/users
 router.get("/", (req, res) => {
@@ -44,15 +45,18 @@ router.post("/", (req, res) => {
     email: req.body.email,
     pw: req.body.pw,
   })
-  .then(dbUserData => {
-    req.session.save(() => {
-      req.session.user_id = dbUserData.id;
-      req.session.username = dbUserData.username;
-      req.session.loggedIn = true;
-  
-      res.json(dbUserData);
-    });
-  })
+    .then(dbUserData => {
+      req.session.save(() => {
+        req.session.user_id = dbUserData.id;
+        req.session.username = dbUserData.username;
+        req.session.loggedIn = true;
+
+        res.json(dbUserData);
+      });
+      
+      //send signup confirmation email
+      emailUser(dbUserData.username, dbUserData.email);
+    })
 });
 
 router.post('/login', (req, res) => {
