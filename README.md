@@ -11,7 +11,7 @@ The technologies we used in this project is Node.js, Express.js, Handlebars.js, 
 
 Below are the links to the deployed application and this repository. Screenshots are shown in the Usage Section.
 
-Deployed application:         
+Deployed application: https://movies-group4.herokuapp.com/        
 Github repository: https://github.com/RyanOfEastview/group4-movies
 
 ## Table of Contents               
