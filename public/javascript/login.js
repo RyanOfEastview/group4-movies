@@ -22,11 +22,13 @@ async function signupFormHandler(event) {
 
     // check the response status
     if (response.ok) {
-      console.log('success');
       usernameEl.value = "";
       emailEl.value = "";
       pwEl.value = "";
-      alert("Successfully signed up");
+      alert("A signup confirmation email has been sent to your email address!");
+
+      //Back to homepage
+      document.location.replace('/');
     } else {
       alert(response.statusText);
     }

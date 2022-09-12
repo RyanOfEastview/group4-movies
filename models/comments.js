@@ -1,8 +1,8 @@
 const { Model, DataTypes } = require("sequelize");
-const sequelize = require("../config/connection");
+const { sequelize } = require("../config/connection");
 
 //create our Post model
-class Comment extends Model {}
+class Comment extends Model { }
 
 // create fields/columns for Post model  --  TO BE DISCUSSED for FIELDS
 Comment.init(
