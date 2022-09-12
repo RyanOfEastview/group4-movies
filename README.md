@@ -27,16 +27,14 @@ If you are setting it up in your local computer. Run "npm i" in your terminal af
 
 ## Usage         
 You can see a few movies on the homepage.           
-![Portfolio Preview 1](web "Portfolio Preview 1")          
-You can see the comments that were made on that movie if you clicked on "Comment here". 
-![Portfolio Preview 1](web "Portfolio Preview 1")                      
+![Homepage Preview](https://github.com/RyanOfEastview/group4-movies/blob/main/screenshots/homepagePreview.jpg "Homepage Preview")          
+You can see the comments that were made on that movie if you clicked on "Comment here".            
+![comment Preview 1](https://github.com/RyanOfEastview/group4-movies/blob/main/screenshots/singlePost1Preview.jpg "comment Preview 1")                      
 If you logged in, you can even add your comments on the movies.                 
-![Portfolio Preview 1](web "Portfolio Preview 1") 
-
 Here is the login Page.             
-![Portfolio Preview 1](web "Portfolio Preview 1") 
-This is how the comment page look after loggin in.   
-![Portfolio Preview 1](web "Portfolio Preview 1")      
+![loginPage Preview](https://github.com/RyanOfEastview/group4-movies/blob/main/screenshots/loginPagePreview.jpg "loginPage Preview")           
+This is how the comment page look after loggin in.          
+![Comment Preview 2](https://github.com/RyanOfEastview/group4-movies/blob/main/screenshots/singlePost2Preview.jpg "Comment Preview 2")      
 
 
 ## License         
@@ -50,19 +48,19 @@ Spencer Cole  -- Handlebars, IMDB API
 Ryan McCarthy    --  Back-end           
 
 ## Tests         
-The following is an example of .env file.      
-// DB_PW is the password you set for your mysql.
-DB_NAME='group4_movies'
-DB_USER='root'
-DB_PW=''
-//Email information using mailtrap.io
-EMAIL_USERNAME = 'c4e0ec0c59cb56'
-EMAIL_PASSWORD = '312363c9cc1775'
-
-Mailtrap provides an environment for testing of email sent.
+The following is an example of .env file.           
+// DB_PW is the password you set for your mysql.           
+DB_NAME='group4_movies'           
+DB_USER='root'           
+DB_PW=''           
+//Email information using mailtrap.io           
+EMAIL_USERNAME = 'c4e0ec0c59cb56'           
+EMAIL_PASSWORD = '312363c9cc1775'           
+           
+Mailtrap provides an environment for testing of email sent.           
 Here is an example of getting a signup confirmation email 
 using mailtrap.io.              
-![mailtrap Preview](web "mailtrap Preview") 
+![mailtrap Preview](https://github.com/RyanOfEastview/group4-movies/blob/main/screenshots/mailtrapExample.jpg "mailtrap Preview") 
 
 
 ## Questions         
