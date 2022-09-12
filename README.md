@@ -33,7 +33,7 @@ You can see the comments that were made on that movie if you clicked on "Comment
 If you logged in, you can even add your comments on the movies.                 
 Here is the login Page.             
 ![loginPage Preview](https://github.com/RyanOfEastview/group4-movies/blob/main/screenshots/loginPagePreview.jpg "loginPage Preview")           
-This is how the comment page look after loggin in.          
+This is how the comment page looks after loggin in.          
 ![Comment Preview 2](https://github.com/RyanOfEastview/group4-movies/blob/main/screenshots/singlePost2Preview.jpg "Comment Preview 2")      
 
 
@@ -45,7 +45,7 @@ This is how the comment page look after loggin in.
 ## Contributing         
 Hiu Sum Jaime Yue -- Handlebars, Back-end          
 Spencer Cole  -- Handlebars, IMDB API          
-Ryan McCarthy    --  Back-end           
+Ryan McCarthy  --  Back-end           
 
 ## Tests         
 The following is an example of .env file.           
