@@ -23,7 +23,7 @@ Github repository: https://github.com/RyanOfEastview/group4-movies
 -[Questions](#questions)        
 
 ## Installation         
-If you are setting it up in your local computer. Run "npm i" in your terminal after downloading the files. Then, set up your .env file, an example of .env file is in the Tests Section. Run "mysql -u root" in your terminal. Type your password for mysql if you set a password. After the terminal showed "mysql>", type "source db/db.sql". After seeing "Database changed", type "quit" to get out of mysql. Next, type "npm run seeds". Finally, type "npm start". To start the web application, go to your usual web browser and type "http://localhost:3001/". You will be able to see the movies web application.                
+If you are setting the project up in your local computer, run "npm i" in your terminal after downloading the files. Then, set up your .env file, an example of .env file is in the Tests Section. Run "mysql -u root" in your terminal if you did not set up a password for mysql. If you set a password for mysql, type "mysql -u root -p " in your terminal and enter your password. After the terminal showed "mysql>", type "source db/db.sql". After seeing "Database changed", type "quit" to get out of mysql. Next, type "npm run seeds". Finally, type "npm start". To start the web application, go to your usual web browser and type "http://localhost:3001/". You will be able to see the movies web application.                
 
 ## Usage         
 You can see a few movies on the homepage.           
@@ -57,7 +57,7 @@ DB_PW=''
 EMAIL_USERNAME = 'c4e0ec0c59cb56'           
 EMAIL_PASSWORD = '312363c9cc1775'           
            
-Mailtrap provides an environment for testing of email sent.           
+Mailtrap provides an environment for testing of email sent. You can set it up for free online. The EMAIL_USERNAME and EMAIL_PASSWORD in the .env file will be provided to you after setting up your mailtrap.            
 Here is an example of getting a signup confirmation email 
 using mailtrap.io.              
 ![mailtrap Preview](https://github.com/RyanOfEastview/group4-movies/blob/main/screenshots/mailtrapExample.jpg "mailtrap Preview") 
