@@ -1,17 +1,18 @@
 # GROUP4 - Movies Reviewer
                 
 ## Description       
-We are Group4, consists of Hiu Sum Jaime Yue, Spencer Cole, Ryan McCarthy.          
+We are Group4, consists of Hiu Sum Jaime Yue, Spencer Cole, Ryan McCarthy.         
+
 This is GROUP4 - Movies Reviewer, a movies web application that allows user to comment on movies.         
+When you open the movies web application, you can see the year of the movie being released and its poster. 
+If you log in, you can comment on the movies.      
 
 The technologies we used in this project is Node.js, Express.js, Handlebars.js, MySql, Sequelize, Heroku and nodemailer.
 
-Below are the links to the deployed application and this repository. Screenshots are shown after the links.
+Below are the links to the deployed application and this repository. Screenshots are shown in the Usage Section.
 
 Deployed application:         
 Github repository: https://github.com/RyanOfEastview/group4-movies
-
-Screenshots:
 
 ## Table of Contents               
 -[Installation](#installation)          
@@ -22,10 +23,21 @@ Screenshots:
 -[Questions](#questions)        
 
 ## Installation         
-Run "npm i" in your terminal after downloading the files.               
+If you are setting it up in your local computer. Run "npm i" in your terminal after downloading the files. Then, set up your .env file, an example of .env file is in the Tests Section. Run "mysql -u root" in your terminal. Type your password for mysql if you set a password. After the terminal showed "mysql>", type "source db/db.sql". After seeing "Database changed", type "quit" to get out of mysql. Next, type "npm run seeds". Finally, type "npm start". To start the web application, go to your usual web browser and type "http://localhost:3001/". You will be able to see the movies web application.                
 
 ## Usage         
-You can see a few movies on the homepage. You can see the comments that were made on that movie if you clicked on "Comment here". If you logged in, you can even add your comments on the movies.           
+You can see a few movies on the homepage.           
+![Portfolio Preview 1](web "Portfolio Preview 1")          
+You can see the comments that were made on that movie if you clicked on "Comment here". 
+![Portfolio Preview 1](web "Portfolio Preview 1")                      
+If you logged in, you can even add your comments on the movies.                 
+![Portfolio Preview 1](web "Portfolio Preview 1") 
+
+Here is the login Page.             
+![Portfolio Preview 1](web "Portfolio Preview 1") 
+This is how the comment page look after loggin in.   
+![Portfolio Preview 1](web "Portfolio Preview 1")      
+
 
 ## License         
 &copy; 2022 by Hiu Sum Jaime Yue, Spencer Cole and Ryan McCarthy         
@@ -33,12 +45,25 @@ You can see a few movies on the homepage. You can see the comments that were mad
          
 
 ## Contributing         
-Hiu Sum Jaime Yue -- Handlebars          
-Spencer Cole  -- Handlebars          
+Hiu Sum Jaime Yue -- Handlebars, Back-end          
+Spencer Cole  -- Handlebars, IMDB API          
 Ryan McCarthy    --  Back-end           
 
 ## Tests         
-If you are setting it up in your local computer. First set up your .env file. Run "mysql -u root" in your terminal. Type your password for mysql if you set a password. After the terminal showed "mysql>", type "source db/db.sql". After seeing "Database changed", type "quit" to get out of mysql. Next, type "npm run seeds". Finally, type "npm start". To start the eweb application, go to your usual web browser and type "http://localhost:3001/". You will be able to see the movies web application. 
+The following is an example of .env file.      
+// DB_PW is the password you set for your mysql.
+DB_NAME='group4_movies'
+DB_USER='root'
+DB_PW=''
+//Email information using mailtrap.io
+EMAIL_USERNAME = 'c4e0ec0c59cb56'
+EMAIL_PASSWORD = '312363c9cc1775'
+
+Mailtrap provides an environment for testing of email sent.
+Here is an example of getting a signup confirmation email 
+using mailtrap.io.              
+![mailtrap Preview](web "mailtrap Preview") 
+
 
 ## Questions         
 If you have any questions about the project, 
