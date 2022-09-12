@@ -3,6 +3,7 @@
 ## Description       
 We are Group4, consists of Hiu Sum Jaime Yue, Spencer Cole, Ryan McCarthy.          
 This is GROUP4 - Movies Reviewer, a movies web application that allows user to comment on movies.         
+
 The technologies we used in this project is Node.js, Express.js, Handlebars.js, MySql, Sequelize, Heroku and nodemailer.
 
 Below are the links to the deployed application and this repository. Screenshots are shown after the links.
